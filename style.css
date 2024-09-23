@@ -1,0 +1,127 @@
+* {
+    margin: 0; /* altera a mergem do site  */
+    padding: 0; /* ajusta a distancia das linhas */
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif; /*altera a fonte de texto do site*/
+    line-height: 1.6; /* altera a altura da linha */
+    background-color: #f9f9f9; /*altera a cor de fundo do site*/
+}
+
+nav {
+    position: fixed; /* fixa o elemento desejado*/
+    top: 0; /* selecionar a altura onde o elemento vai ser fixado*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548); /* seleciona a cor de fundo da aba de navegação*/
+    padding: 20px 0; /* ajusta a distancia das linhas*/
+}
+
+nav ul {
+    list-style-type: none; /* escolhe a estilizacao da lista*/
+    display: flex;
+    justify-content: center; /* centraliza o conteudo do elemento*/
+}
+
+nav ul li {
+    margin: 0 20px; /* altera a margem do elemento*/
+}
+
+nav ul li a {
+    color: white; /*altera a cor do elemento*/
+    text-decoration: none;
+    font-size: 18px; /*altera o tamanho da fonte de texto*/
+    padding: 10px; /*ajusta a distancia*/
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+section:not(#home) {
+    padding: 100px 20px; /*distancia de altura e largura do elemento*/
+    text-align: center; /*centraliza o texto*/
+    display: flex;
+    justify-content: center; /*centraliza o conteudo do elemento*/
+    align-items: center;
+    height: 100vh; /*ajusta a altura do elemento*/
+}
+
+#home {
+    /*background-color: #4A90E2;*/
+    background-image:url(https://cdn.pixabay.com/photo/2018/07/18/16/07/car-3546670_1280.jpg); /*escolhe uma imagem linkada para o fundo do site*/
+    background-size: cover; /* seleciona a camada que a imagem fica*/
+    background-repeat: no-repeat; /*para a imagem nao se repetir*/
+    color: rgb(255, 255, 255); /*seleciona cor*/
+    height: 100vh; /*seleciona tamanho*/
+    text-align: center; /*selecionar local do texto*/
+    text-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px; /*ajusta a borda da imagem*/
+}
+
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#services {
+    background-color: #ffffff;
+}
+
+#about {
+    background-color: #EAEAEA;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+.cta-button {
+    margin-top: 30px;
+    background-color: #d30e0eea;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+h6{
+    text-align: center;
+    color: #555;
+}
